@@ -359,7 +359,7 @@ a {
 }
 #container .left-col .intrude-less {
   width: 76%;
-  top: 67px;
+  top: 5px;
   position: absolute;
 }
 #container .mid-col {
@@ -579,12 +579,22 @@ a {
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
+.motto {
+  text-align: center;
+  margin: 0.67em 0;
+  font-size: 25px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  font-family: alluraregular;
+}
 .alluraregular {
   font-family: alluraregular;
 }
 #header {
   width: 100%;
-  padding: 20% 0% 0% 15%;
+  padding: 15% 0% 0% 15%;
 }
 #header a {
 /*font-family: "微软雅黑";*/
