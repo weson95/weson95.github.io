@@ -29,12 +29,14 @@
   
     <link rel="icon" href="/img/leaves.ico">
   
+  <link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <script src="http://kiritor.github.io/js/jquery1.8.2.min.js"></script>
   <script src="http://kiritor.github.io/js/jquery.nicescroll.js"></script>
   <script src="http://kiritor.github.io/js/jquery.qrcode.min.js"></script>
   <script src="/js/ug-theme-default.js"></script>
   <script src="/js/unitegallery.js"></script>
+  <script src="http://cdn.bootcss.com/clipboard.js/1.5.9/clipboard.min.js"></script>
 </head>
 
 <body>
@@ -46,7 +48,7 @@
 	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=290 height=80 src="http://music.163.com/outchain/player?type=2&id=1592728&auto=0&height=66"></iframe>
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://weson95.github.io/img/lcore.jpg" class="js-avatar">
+			<img src="/img/lcore.jpg" class="js-avatar">
 		</a>
 
 		<hgroup>
@@ -134,7 +136,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/声明/" style="font-size: 10px;">声明</a>
+						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a>
 					</div>
 				</section>
 				
@@ -171,7 +173,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://weson95.github.io/img/lcore.jpg" class="js-avatar">
+				<img src="/img/lcore.jpg" class="js-avatar">
 				<hgroup>
 				  <h1 class="header-author">Weson</h1>
 				</hgroup>
@@ -360,18 +362,23 @@
                                                                                 
                                         </div>
                                         
-                                            <div>
+                                            <div class="copyright">
 	<p>
 		<span>本文标题：</span>
 		<a href="/2016/08/28/Markdown入门指南/">Markdown入门指南</a>
 	</p>
 	<p>
 		<span>原始链接：</span>
-		<a href="/"></a>
+		<a href="/2016/08/28/Markdown入门指南/" title="Markdown入门指南">http://blog.weson.cf/2016/08/28/Markdown入门指南/</a>
+		<span class="copy-path" data-clipboard-text="原文：http://blog.weson.cf/2016/08/28/Markdown入门指南/	作者：Weson" title="点击复制文章链接">
+		<i class="fa fa-clipboard"></i>
+		</span>
+        <script> var clipboard = new Clipboard('.copy-path'); </script>
 	</p>
 	<p>
 		<span>许可协议:</span>
-		<a></a>
+		<i class="fa fa-creative-commons"></i>
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International">"署名-非商用-相同方式共享 4.0"</a>转载请保留原文链接及作者
 	</p>
 </div>
                                         
@@ -440,7 +447,6 @@
 <!--
 
 -->
-
 </div>
       <!--
 <footer id="footer">
