@@ -349,7 +349,6 @@ a {
   -ms-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   height: 100%;
-  overflow-y: auto;
 }
 #container .left-col .overlay {
   width: 100%;
@@ -672,7 +671,7 @@ a {
   position: relative;
   width: 100%;
   overflow: hidden;
-  min-height: 200px;
+  min-height: 500px;
 }
 #header .switch-area .switch-wrap {
   -webkit-transition: -webkit-transform 0.3s ease-in;
@@ -1281,41 +1280,6 @@ a {
 }
 #article-nav #article-nav-older {
   float: right;
-}
-.copyright {
-  width: 85%;
-  max-width: 45em;
-  margin: 1.2em auto 0;
-  padding: 0.5em 1.8em;
-  border: 1px solid #d3d3d3;
-  font-size: 0.93rem;
-  line-height: 1.6em;
-  word-break: break-all;
-  background: rgba(255,255,255,0.4);
-}
-.copyright span {
-  display: inline-block;
-  width: 5.8em;
-  color: #b5b5b5;
-  font-weight: bold;
-}
-.copyright a {
-  color: #808080;
-}
-.copyright a:hover {
-  color: #a3d2a3;
-  text-decoration: underline;
-}
-.copyright:hover .fa-clipboard {
-  color: #000;
-}
-.copyright .copy-path {
-  margin-left: 1em;
-  width: 1em;
-}
-.copyright .copy-path:hover {
-  color: #808080;
-  cursor: pointer;
 }
 @-moz-keyframes cd-bounce-1 {
   0% {
