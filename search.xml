@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[Markdown入门指南]]></title>
+      <url>http://blog.weson.cf/2016/08/28/Markdown%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</url>
+      <content type="html"><![CDATA[<h2 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h2><p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此有很多人用它写博客。</p>
+<a id="more"></a>
+<h2 id="Markdown编辑器推荐"><a href="#Markdown编辑器推荐" class="headerlink" title="Markdown编辑器推荐"></a>Markdown编辑器推荐</h2><p>虽然记事本就可以编辑Markdown，但是并不提供实习预览功能，我推荐两个在线编辑预览的编辑器。</p>
+<ol>
+<li><a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">Cmd Markdown</a> 作业部落出品，也是一款不错的工具和博客平台兼顾的产品。全平台且提供web版<br><img src="http://ocknrilhe.bkt.clouddn.com/4319_6.jpg" alt=""></li>
+<li><a href="http://markdown.xiaoshujiang.com/" target="_blank" rel="external">小书匠编辑器</a>全平台覆盖并且有web版<br><img src="http://ocknrilhe.bkt.clouddn.com/4319_7.jpg" alt=""></li>
+</ol>
+<h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>标题能显示出文章的结构。行首插入1-6个 # ，每增加一个 # 表示更深入层次的内容，对应到标题的深度由 1-6 阶。例如：</p>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># 一级标题</span></div><div class="line"><span class="meta">## 二级标题</span></div><div class="line"><span class="meta">### 三级标题</span></div><div class="line"><span class="meta">#### 四级标题</span></div><div class="line"><span class="meta">##### 五级标题</span></div><div class="line"><span class="meta">###### 六级标题</span></div></pre></td></tr></table></figure>
+<p><strong>注：# 和「一级标题」之间建议保留一个字符的空格，这是最标准的 Markdown 写法。</strong><br><img src="http://ocknrilhe.bkt.clouddn.com/360%E6%88%AA%E5%9B%BE-21704965.jpg" alt=""></p>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>有序列表只需要在文字前面加上 1. 就可以了，无序列表只需要在文字前面加上 - 。例如：</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">- 文本<span class="number">1</span></div><div class="line">- 文本<span class="number">2</span></div><div class="line">- 文本<span class="number">3</span></div><div class="line"><span class="number">1.</span> 文本<span class="number">1</span></div><div class="line"><span class="number">2.</span> 文本<span class="number">2</span></div><div class="line"><span class="number">3.</span> 文本<span class="number">3</span></div></pre></td></tr></table></figure>
+<p><img src="http://ocknrilhe.bkt.clouddn.com/360%E6%88%AA%E5%9B%BE-21765524.jpg" alt=""></p>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>如果你需要引用一小段别处的句子，那么就要用引用的格式。例如：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;这里是引用</div></pre></td></tr></table></figure>
+<p><img src="http://ocknrilhe.bkt.clouddn.com/360%E6%88%AA%E5%9B%BE-29897420.jpg" alt=""></p>
+<h3 id="图片与链接"><a href="#图片与链接" class="headerlink" title="图片与链接"></a>图片与链接</h3><p>插入链接与插入图片的语法很像，区别在一个 !号</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">图片为：![<span class="string">图片描述</span>](<span class="link">图片地址</span>)</div><div class="line">链接为：[<span class="string">链接描述</span>](<span class="link">链接地址</span>)</div></pre></td></tr></table></figure>
+<p><img src="http://ocknrilhe.bkt.clouddn.com/360%E6%88%AA%E5%9B%BE-29924829.jpg" alt=""></p>
+<h3 id="粗体与斜体"><a href="#粗体与斜体" class="headerlink" title="粗体与斜体"></a>粗体与斜体</h3><p>Markdown 的粗体和斜体也非常简单，用两个 <em> 包含一段文本就是粗体的语法，用一个 </em> 包含一段文本就是斜体的语法。例如：</p>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">*<span class="strong">*这是粗体*</span>*</div><div class="line"><span class="strong">*这是斜体*</span></div></pre></td></tr></table></figure>
+<p>效果：<strong>这是粗体</strong>，<em>这是斜体</em></p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>表格是我觉得 Markdown 比较累人的地方，例子如下：</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="params">| Tables        |</span> Are           <span class="params">| Cool  |</span></div><div class="line"><span class="params">| ------------- |</span><span class="symbol">:-------------</span><span class="symbol">:|</span> -----<span class="symbol">:|</span></div><div class="line"><span class="params">| col 3 is      |</span> right-aligned <span class="params">| $1600 |</span></div><div class="line"><span class="params">| col 2 is      |</span> centered      <span class="params">|   $12 |</span></div><div class="line"><span class="params">| zebra stripes |</span> are neat      <span class="params">|    $1 |</span></div></pre></td></tr></table></figure>
+<p>这种语法生成的表格如下：</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[hexo常用命令]]></title>
+      <url>http://blog.weson.cf/2016/08/27/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+      <content type="html"><![CDATA[<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><blockquote>
+<p>hexo new “title” #新建文章<br>hew new page “title” #新建页面<br>hexo generate #生成静态网页<br>hexo server #启动服务预览<br>hexo deploy#开始部署</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="命令简写"><a href="#命令简写" class="headerlink" title="命令简写"></a>命令简写</h2><blockquote>
+<p>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo p == hexo publish<br>hexo g== hexo generate #生成静态网页<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy#开始部署</p>
+</blockquote>
+<h2 id="命令合并"><a href="#命令合并" class="headerlink" title="命令合并"></a>命令合并</h2><blockquote>
+<p>hexo d -g #生成静态网页并部署</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
