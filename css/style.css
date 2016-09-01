@@ -238,7 +238,7 @@ a {
   margin: 3px;
 }
 #container .left-col {
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.9);
   width: 300px;
   position: fixed;
   opacity: 1;
@@ -557,7 +557,7 @@ a {
 }
 .header-author {
   text-align: center;
-  margin: 13px 0;
+  margin: 10px 0;
   font-family: Times, Georgia, serif;
   font-size: 30px;
   -webkit-transition: 0.3s;
@@ -697,7 +697,7 @@ a {
   position: relative;
   width: 100%;
   overflow: hidden;
-  min-height: 260px;
+  min-height: 200px;
   font-size: 0.875rem;
 }
 #header .switch-area .switch-wrap {
@@ -2542,7 +2542,7 @@ pre .javascript .function {
 }
 .switch-btn {
   margin: 0 auto;
-  margin-top: 23px;
+  margin-top: 5px;
   position: relative;
   width: 70px;
   text-align: center;
