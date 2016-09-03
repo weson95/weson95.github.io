@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="Weson" />
+
+
+
+<meta name="description" content="介绍Emmet (前身为 Zen Coding) 是一个能大幅度提高前端开发效率的一个工具，它使用仿CSS选择器的语法来生成代码，大大提高了HTML/CSS代码编写的速度。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Emmet使用手册">
+<meta property="og:url" content="http://blog.weson.cf/2016/09/03/Emmet使用手册/index.html">
+<meta property="og:site_name" content="Weson's Blog">
+<meta property="og:description" content="介绍Emmet (前身为 Zen Coding) 是一个能大幅度提高前端开发效率的一个工具，它使用仿CSS选择器的语法来生成代码，大大提高了HTML/CSS代码编写的速度。">
+<meta property="og:updated_time" content="2016-09-03T12:36:15.841Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Emmet使用手册">
+<meta name="twitter:description" content="介绍Emmet (前身为 Zen Coding) 是一个能大幅度提高前端开发效率的一个工具，它使用仿CSS选择器的语法来生成代码，大大提高了HTML/CSS代码编写的速度。">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="Weson&#39;s Blog" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/img/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>Emmet使用手册 | Weson&#39;s Blog</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author alluraregular"><a href="/">Weson</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle alluraregular">Whatever is worth doing is worth doing well!</p>
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/categories/learn">学习日志</a></li>
+                        
+                            <li><a href="/categories/life">点滴生活</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:929226205@qq.com" title="Email"></a>
+                            
+                                <a class="fa 新浪微博" href="http://weibo.com/u/2873981704/home" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/weson95" title="GitHub"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Emmet/">Emmet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sublime-text-3/">Sublime text 3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Weson</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Weson</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">Whatever is worth doing is worth doing well!</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/categories/learn">学习日志</a></li>
+                
+                    <li><a href="/categories/life">点滴生活</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:929226205@qq.com" title="Email"></a>
+                            
+                                <a class="fa 新浪微博" target="_blank" href="http://weibo.com/u/2873981704/home" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/weson95" title="GitHub"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-Emmet使用手册" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/03/Emmet使用手册/" class="article-date">
+      <time datetime="2016-09-03T10:34:43.000Z" itemprop="datePublished">2016-09-03</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Emmet使用手册
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/learn/">learn</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Emmet/">Emmet</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Emmet (前身为 Zen Coding) 是一个能大幅度提高前端开发效率的一个工具，它使用仿CSS选择器的语法来生成代码，大大提高了HTML/CSS代码编写的速度。<br><a id="more"></a></p>
+<h1 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h1><h2 id="HTML缩写"><a href="#HTML缩写" class="headerlink" title="HTML缩写"></a>HTML缩写</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>HTML文档需要包含一些固定的标签，比如<html>、<head>、</head><body>等，现在你只需要1秒钟就可以输入这些标签。比如输入“!”或“html:5”，然后按拓展键（默认为Tab键，不行的可以试试Ctrl+E）：</body></html></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    </div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>html:5 或!：用于HTML5文档类型</li>
+<li>html:xt：用于XHTML过渡文档类型</li>
+<li>html:4s：用于HTML4严格文档类型<h3 id="id和类属性"><a href="#id和类属性" class="headerlink" title="id和类属性"></a>id和类属性</h3>缩写：#header<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">div</span> id=<span class="string">"header"</span>&gt;&lt;/div&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>缩写：.title<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">div</span> class=<span class="string">"title"</span>&gt;&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>缩写：form#search.wide<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">form</span> id=<span class="string">"search"</span> class=<span class="string">"wide"</span>&gt;&lt;/form&gt;</div></pre></td></tr></table></figure></p>
+<p>缩写：p.class1.class2.class3<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">p</span> class=<span class="string">"class1 class2 class3"</span>&gt;&lt;/p&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h3><p>缩写：a{Click me}</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">a</span> href=<span class="string">""</span>&gt;Click me&lt;/a&gt;</div></pre></td></tr></table></figure>
+<h3 id="嵌套"><a href="#嵌套" class="headerlink" title="嵌套"></a>嵌套</h3><p>>：子元素符号，表示嵌套的元素<br>缩写：nav&gt;ul&gt;li<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;nav&gt;</div><div class="line">    &lt;ul&gt;</div><div class="line">        &lt;li&gt;&lt;/li&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">&lt;/nav&gt;</div></pre></td></tr></table></figure></p>
+<p>+：同级标签符号<br>缩写：div+p</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;&lt;/div&gt;</div><div class="line">&lt;p&gt;&lt;/p&gt;</div></pre></td></tr></table></figure>
+<p>^：可以使该符号后的标签提升一级<br>缩写：div&gt;p^span</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;</div><div class="line">    &lt;p&gt;&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;span&gt;&lt;/span&gt;</div></pre></td></tr></table></figure>
+<h3 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h3><p>缩写：div&gt;(header&gt;ul&gt;li&gt;a)+footer</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;</div><div class="line">    &lt;header&gt;</div><div class="line">        &lt;ul&gt;</div><div class="line">            &lt;li&gt;&lt;<span class="selector-tag">a</span> href=<span class="string">""</span>&gt;&lt;/a&gt;&lt;/li&gt;</div><div class="line">        &lt;/ul&gt;</div><div class="line">    &lt;/header&gt;</div><div class="line">    &lt;footer&gt;</div><div class="line">    &lt;/footer&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<h3 id="乘法（定义多个元素）"><a href="#乘法（定义多个元素）" class="headerlink" title="乘法（定义多个元素）"></a>乘法（定义多个元素）</h3><p>缩写：ul&gt;li*5<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;ul&gt;</div><div class="line">    &lt;li&gt;&lt;/li&gt;</div><div class="line">    &lt;li&gt;&lt;/li&gt;</div><div class="line">    &lt;li&gt;&lt;/li&gt;</div><div class="line">    &lt;li&gt;&lt;/li&gt;</div><div class="line">    &lt;li&gt;&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="自增"><a href="#自增" class="headerlink" title="自增"></a>自增</h3><p>缩写：ul&gt;li.item$*5</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;ul&gt;</div><div class="line">    &lt;<span class="selector-tag">li</span> class=<span class="string">"item1"</span>&gt;&lt;/li&gt;</div><div class="line">    &lt;<span class="selector-tag">li</span> class=<span class="string">"item2"</span>&gt;&lt;/li&gt;</div><div class="line">    &lt;<span class="selector-tag">li</span> class=<span class="string">"item3"</span>&gt;&lt;/li&gt;</div><div class="line">    &lt;<span class="selector-tag">li</span> class=<span class="string">"item4"</span>&gt;&lt;/li&gt;</div><div class="line">    &lt;<span class="selector-tag">li</span> class=<span class="string">"item5"</span>&gt;&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure>
+<h3 id="自定义属性"><a href="#自定义属性" class="headerlink" title="自定义属性"></a>自定义属性</h3><p>缩写：td[rowspan=2 colspan=3 title]</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">td</span> rowspan=<span class="string">"2"</span> colspan=<span class="string">"3"</span> title=<span class="string">""</span>&gt;&lt;/td&gt;</div></pre></td></tr></table></figure>
+<h3 id="隐式标签"><a href="#隐式标签" class="headerlink" title="隐式标签"></a>隐式标签</h3><p>声明一个带类的标签，只需输入div.item，就会生成<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"item"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></div></pre></td></tr></table></figure></p>
+<p>在过去版本中，可以省略掉div，即输入.item即可生成<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"item"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></div></pre></td></tr></table></figure></p>
+<p>现在如果只输入.item，则Emmet会根据父标签进行判定。比如在<ul>中输入.item，就会生成<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;li <span class="class"><span class="keyword">class</span></span>=<span class="string">"item"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></div></pre></td></tr></table></figure></ul></p>
+<p>下面是所有的隐式标签名称： </p>
+<ul>
+<li>li：用于ul和ol中</li>
+<li>tr：用于table、tbody、thead和tfoot中</li>
+<li>td：用于tr中</li>
+<li>option：用于select和optgroup中</li>
+</ul>
+<h2 id="CSS缩写"><a href="#CSS缩写" class="headerlink" title="CSS缩写"></a>CSS缩写</h2><h3 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h3><p>缩写：w100</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">width</span>: <span class="number">100px</span>;</div></pre></td></tr></table></figure>
+<p>除了px，也可以生成其他单位，比如输入h10p+m5e，结果如下： </p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">height</span>: <span class="number">10%</span>;  </div><div class="line"><span class="attribute">margin</span>: <span class="number">5em</span>;</div></pre></td></tr></table></figure>
+<p>单位别名列表:</p>
+<ul>
+<li>p表示%</li>
+<li>e表示em</li>
+<li>x表示ex</li>
+</ul>
+<h3 id="附加属性"><a href="#附加属性" class="headerlink" title="附加属性"></a>附加属性</h3><p>缩写：@f+</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">@font-face &#123;  </div><div class="line">  font-family: 'FontName';  </div><div class="line">  src: url('FileName.eot');  </div><div class="line">  src: url('FileName.eot?#iefix') format('embedded-opentype'),  </div><div class="line">     url('FileName.woff') format('woff'),  </div><div class="line">     url('FileName.ttf') format('truetype'),  </div><div class="line">     url('FileName.svg#FontName') format('svg');  </div><div class="line">  font-style: normal;  </div><div class="line">  font-weight: normal;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="供应商前缀"><a href="#供应商前缀" class="headerlink" title="供应商前缀"></a>供应商前缀</h3><p>如果输入非W3C标准的CSS属性，Emmet会自动加上供应商前缀，比如输入trs，则会生成：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">-webkit-<span class="attribute">transform</span>: ;  </div><div class="line">-moz-<span class="attribute">transform</span>: ;  </div><div class="line">-ms-<span class="attribute">transform</span>: ;  </div><div class="line">-o-<span class="attribute">transform</span>: ;  </div><div class="line"><span class="attribute">transform</span>: ;</div></pre></td></tr></table></figure>
+<p>前缀缩写如下：</p>
+<ul>
+<li>w表示 -webkit-</li>
+<li>m表示 -moz-</li>
+<li>s表示 -ms-</li>
+<li>o表示 -o-</li>
+</ul>
+<h3 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h3><p>缩写：lg(left, #fff 50%, #000)</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">background-image</span>: -webkit-linear-gradient(left, <span class="number">#fff</span> <span class="number">50%</span>, <span class="number">#000</span>);</div><div class="line"><span class="attribute">background-image</span>: -o-linear-gradient(left, <span class="number">#fff</span> <span class="number">50%</span>, <span class="number">#000</span>);</div><div class="line"><span class="attribute">background-image</span>: linear-gradient(to right, <span class="number">#fff</span> <span class="number">50%</span>, <span class="number">#000</span>);</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/09/03/Emmet使用手册/">Emmet使用手册</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Weson</a></p>
+        <p><span>发布时间:</span>2016-09-03, 18:34:43</p>
+        <p><span>最后更新:</span>2016-09-03, 20:36:15</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/09/03/Emmet使用手册/" title="Emmet使用手册">http://blog.weson.cf/2016/09/03/Emmet使用手册/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://blog.weson.cf/2016/09/03/Emmet使用手册/　　作者: Weson" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/09/02/Sublime-Text-3插件推荐/">
+                    Sublime Text 3插件推荐
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#介绍"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#语法"><span class="toc-number">2.</span> <span class="toc-text">语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML缩写"><span class="toc-number">2.1.</span> <span class="toc-text">HTML缩写</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化"><span class="toc-number">2.1.1.</span> <span class="toc-text">初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#id和类属性"><span class="toc-number">2.1.2.</span> <span class="toc-text">id和类属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文本"><span class="toc-number">2.1.3.</span> <span class="toc-text">文本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#嵌套"><span class="toc-number">2.1.4.</span> <span class="toc-text">嵌套</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分组"><span class="toc-number">2.1.5.</span> <span class="toc-text">分组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#乘法（定义多个元素）"><span class="toc-number">2.1.6.</span> <span class="toc-text">乘法（定义多个元素）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自增"><span class="toc-number">2.1.7.</span> <span class="toc-text">自增</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义属性"><span class="toc-number">2.1.8.</span> <span class="toc-text">自定义属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#隐式标签"><span class="toc-number">2.1.9.</span> <span class="toc-text">隐式标签</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS缩写"><span class="toc-number">2.2.</span> <span class="toc-text">CSS缩写</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#赋值"><span class="toc-number">2.2.1.</span> <span class="toc-text">赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#附加属性"><span class="toc-number">2.2.2.</span> <span class="toc-text">附加属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#供应商前缀"><span class="toc-number">2.2.3.</span> <span class="toc-text">供应商前缀</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#渐变"><span class="toc-number">2.2.4.</span> <span class="toc-text">渐变</span></a></li></ol></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Emmet使用手册　| Weson's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/09/03/Emmet使用手册/" data-title="Emmet使用手册" data-url="http://blog.weson.cf/2016/09/03/Emmet使用手册/"></div>
+    <script>
+        var duoshuoQuery = {short_name:"Weson"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = 'http://weson95.github.io/js/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
+        
+            // Add comment count
+            $(function(){ 
+                var jsonUrl = "http://api.duoshuo.com/threads/counts.jsonp?short_name=Weson&threads=2016/09/03/Emmet使用手册/&callback=?";
+                $.getJSON(jsonUrl, function(result){
+                    $.each(result.response, function(i, field){
+                        var value = field.comments;
+                        if (value > 0) {
+                            $(".count-comment").text(value);
+                            return;
+                        }
+                    })
+                })
+            })
+        
+    </script>
+    
+    <aside class="comment-bar">
+        <a href="javascript:void(0);">
+            <i class="fa fa-commenting-o animated infinite pulse"></i>
+            <i class="fa fa-spinner fa-pulse"></i>
+            <span class="count-comment"></span>
+        </a>
+    </aside>
+    <script>
+        var $commentBar = $("#comments aside.comment-bar");
+        var load$hide = function(){
+            $commentBar.find("a > i").toggle();
+            loadComment();
+            $commentBar.fadeOut(800);
+        }
+        $commentBar.click(function(){
+            load$hide();
+        })
+        $commentBar.children("a").hover(function(){
+            load$hide();
+        })
+        if (window.location.hash === "#comments") {
+            load$hide();
+        }
+    </script>
+
+</div>
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/09/02/Sublime-Text-3插件推荐/" title="下一篇: Sublime Text 3插件推荐">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/09/03/Emmet使用手册/">Emmet使用手册</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/02/Sublime-Text-3插件推荐/">Sublime Text 3插件推荐</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/28/Markdown入门指南/">Markdown入门指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/27/hexo常用命令/">hexo常用命令</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016 Weson
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme 
+                <!--
+                <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE 
+                -->
+                <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+    <script>
+        var originTitle = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+                clearTimeout(titleTime);
+            }
+            else {
+                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+                titleTime = setTimeout(function() {
+                    document.title = originTitle;
+                }, 2000);
+            }
+        })
+    </script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
