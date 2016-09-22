@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.weson.cf/"/>
-  <updated>2016-09-03T12:36:15.841Z</updated>
+  <updated>2016-09-19T16:48:15.196Z</updated>
   <id>http://blog.weson.cf/</id>
   
   <author>
@@ -16,11 +16,79 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Font Awesome使用手册</title>
+    <link href="http://blog.weson.cf/2016/09/19/Font-Awesome%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
+    <id>http://blog.weson.cf/2016/09/19/Font-Awesome使用手册/</id>
+    <published>2016-09-19T15:10:38.000Z</published>
+    <updated>2016-09-19T16:48:15.196Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Font Awesome为您提供可缩放的矢量图标，您可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果。（如果需要支持IE7，那真的十分抱歉。Font Awesome从4.1.0版本开始不再支持IE7， 但更早的版本仍然支持。）</p>
+<a id="more"></a>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="直接下载"><a href="#直接下载" class="headerlink" title="直接下载"></a>直接下载</h3><p>直接从官网下载Font Awesome，然后在网页头部引用即可在网页中使用Font Awesome提供的图标。</p>
+<h3 id="引用CDN服务"><a href="#引用CDN服务" class="headerlink" title="引用CDN服务"></a>引用CDN服务</h3><p>直接在网页头部引用CDN。</p>
+<h2 id="使用指南"><a href="#使用指南" class="headerlink" title="使用指南"></a>使用指南</h2><h3 id="基本图标"><a href="#基本图标" class="headerlink" title="基本图标"></a>基本图标</h3><p>Font Awesome图标使用在几乎任何地方，只需要使用CSS前缀 fa ，再加上图标名称。 Font Awesome是为使用内联元素而设计的。我们通常更喜欢使用 <i> ，因为它更简洁。 但实际上使用 <span> 才能更加语义化。</span></i></p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-camera-retro"</span>&gt;&lt;/i&gt;照相机</div></pre></td></tr></table></figure>
+<blockquote>
+<p><i class="fa fa-camera-retro"></i> 照相机</p>
+</blockquote>
+<h3 id="大图标"><a href="#大图标" class="headerlink" title="大图标"></a>大图标</h3><p>使用 fa-lg (33%递增)、fa-2x、 fa-3x、fa-4x，或者 fa-5x 类 来放大图标。如果以上大小都不能满足要求可以使用font-size来设置大小。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-camera-retro fa-lg"</span>&gt;&lt;/i&gt; fa-lg</div><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-camera-retro fa-2x"</span>&gt;&lt;/i&gt; fa-<span class="number">2</span>x</div><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-camera-retro fa-3x"</span>&gt;&lt;/i&gt; fa-<span class="number">3</span>x</div><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-camera-retro fa-4x"</span>&gt;&lt;/i&gt; fa-<span class="number">4</span>x</div><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-camera-retro fa-5x"</span>&gt;&lt;/i&gt; fa-<span class="number">5</span>x</div></pre></td></tr></table></figure>
+<blockquote>
+<p><i class="fa fa-camera-retro fa-lg"></i> fa-lg<br><i class="fa fa-camera-retro fa-2x"></i> fa-2x<br><i class="fa fa-camera-retro fa-3x"></i> fa-3x<br><i class="fa fa-camera-retro fa-4x"></i> fa-4x<br><i class="fa fa-camera-retro fa-5x"></i> fa-5x</p>
+</blockquote>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>使用 fa-ul 和 fa-li 便可以简单的将无序列表的默认符号替换掉。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">ul</span> class=<span class="string">"fa-ul"</span>&gt;</div><div class="line">  &lt;li&gt;&lt;<span class="selector-tag">i</span> class=<span class="string">"fa-li fa fa-check-square"</span>&gt;&lt;/i&gt;列表样式<span class="number">1</span>&lt;/li&gt;</div><div class="line">  &lt;li&gt;&lt;<span class="selector-tag">i</span> class=<span class="string">"fa-li fa fa-spinner fa-spin"</span>&gt;&lt;/i&gt;列表样式<span class="number">2</span>&lt;/li&gt;</div><div class="line">  &lt;li&gt;&lt;<span class="selector-tag">i</span> class=<span class="string">"fa-li fa fa-square"</span>&gt;&lt;/i&gt;列表样式<span class="number">3</span>&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<ul class="fa-ul"><br>  <li><i class="fa-li fa fa-check-square"></i>列表样式1</li><br>  <li><i class="fa-li fa fa-spinner fa-spin"></i>列表样式2</li><br>  <li><i class="fa-li fa fa-square"></i>列表样式3</li><br></ul>
+
+</blockquote>
+<h3 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h3><p>使用 fa-spin 类来使任意图标旋转，现在您还可以使用 fa-pulse 来使其进行8方位旋转。尤其适合 fa-spinner、fa-refresh 和 fa-cog 。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-spinner fa-spin"</span>&gt;&lt;/i&gt;</div><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-circle-o-notch fa-spin"</span>&gt;&lt;/i&gt;</div><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-refresh fa-spin"</span>&gt;&lt;/i&gt;</div><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-cog fa-spin"</span>&gt;&lt;/i&gt;</div><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-spinner fa-pulse"</span>&gt;&lt;/i&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p><i class="fa fa-spinner fa-spin"></i><br><i class="fa fa-circle-o-notch fa-spin"></i><br><i class="fa fa-refresh fa-spin"></i><br><i class="fa fa-cog fa-spin"></i><br><i class="fa fa-spinner fa-pulse"></i></p>
+</blockquote>
+<h3 id="旋转与翻转"><a href="#旋转与翻转" class="headerlink" title="旋转与翻转"></a>旋转与翻转</h3><p>使用 fa-rotate-<em> 和 fa-flip-</em> 类可以对图标进行任意旋转和翻转。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-shield"</span>&gt;&lt;/i&gt;正常&lt;br&gt;</div><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-shield fa-rotate-90"</span>&gt;&lt;/i&gt; 旋转<span class="number">90</span>°&lt;br&gt;</div><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-shield fa-rotate-180"</span>&gt;&lt;/i&gt;旋转<span class="number">180</span>°&lt;br&gt;</div><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-shield fa-rotate-270"</span>&gt;&lt;/i&gt; 旋转<span class="number">270</span>°&lt;br&gt;</div><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-shield fa-flip-horizontal"</span>&gt;&lt;/i&gt; 水平翻转l&lt;br&gt;</div><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-shield fa-flip-vertical"</span>&gt;&lt;/i&gt; 垂直翻转</div></pre></td></tr></table></figure>
+<blockquote>
+<p><i class="fa fa-shield"></i>正常<br><br><i class="fa fa-shield fa-rotate-90"></i> 旋转90°<br><br><i class="fa fa-shield fa-rotate-180"></i>旋转180°<br><br><i class="fa fa-shield fa-rotate-270"></i> 旋转270°<br><br><i class="fa fa-shield fa-flip-horizontal"></i> 水平翻转<br><br><i class="fa fa-shield fa-flip-vertical"></i> 垂直翻转</p>
+</blockquote>
+<h3 id="组合使用"><a href="#组合使用" class="headerlink" title="组合使用"></a>组合使用</h3><p>如果想要将多个图标组合起来，使用 fa-stack 类作为父容器， fa-stack-1x 作为正常比例的图标， fa-stack-2x 作为大一些的图标。还可以使用 fa-inverse 类来切换图标颜色。您可以在父容器中 通过添加 大图标 类来控制整体大小。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">span</span> class=<span class="string">"fa-stack fa-lg"</span>&gt;</div><div class="line">  &lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-square-o fa-stack-2x"</span>&gt;&lt;/i&gt;</div><div class="line">  &lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-twitter fa-stack-1x"</span>&gt;&lt;/i&gt;</div><div class="line">&lt;/span&gt;</div><div class="line">fa-twitter on fa-square-o&lt;br&gt;</div><div class="line">&lt;<span class="selector-tag">span</span> class=<span class="string">"fa-stack fa-lg"</span>&gt;</div><div class="line">  &lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-circle fa-stack-2x"</span>&gt;&lt;/i&gt;</div><div class="line">  &lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-flag fa-stack-1x fa-inverse"</span>&gt;&lt;/i&gt;</div><div class="line">&lt;/span&gt;</div><div class="line">fa-flag on fa-circle&lt;br&gt;</div><div class="line">&lt;<span class="selector-tag">span</span> class=<span class="string">"fa-stack fa-lg"</span>&gt;</div><div class="line">  &lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-square fa-stack-2x"</span>&gt;&lt;/i&gt;</div><div class="line">  &lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-terminal fa-stack-1x fa-inverse"</span>&gt;&lt;/i&gt;</div><div class="line">&lt;/span&gt;</div><div class="line">fa-terminal on fa-square&lt;br&gt;</div><div class="line">&lt;<span class="selector-tag">span</span> class=<span class="string">"fa-stack fa-lg"</span>&gt;</div><div class="line">  &lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-camera fa-stack-1x"</span>&gt;&lt;/i&gt;</div><div class="line">  &lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-ban fa-stack-2x text-danger"</span>&gt;&lt;/i&gt;</div><div class="line">&lt;/span&gt;</div><div class="line">fa-ban on fa-camera</div></pre></td></tr></table></figure>
+<blockquote>
+<p><span class="fa-stack fa-lg"><br>  <i class="fa fa-square-o fa-stack-2x"></i><br>  <i class="fa fa-twitter fa-stack-1x"></i><br></span><br>fa-twitter on fa-square-o<br><br><span class="fa-stack fa-lg"><br>  <i class="fa fa-circle fa-stack-2x"></i><br>  <i class="fa fa-flag fa-stack-1x fa-inverse"></i><br></span><br>fa-flag on fa-circle<br><br><span class="fa-stack fa-lg"><br>  <i class="fa fa-square fa-stack-2x"></i><br>  <i class="fa fa-terminal fa-stack-1x fa-inverse"></i><br></span><br>fa-terminal on fa-square<br><br><span class="fa-stack fa-lg"><br>  <i class="fa fa-camera fa-stack-1x"></i><br>  <i class="fa fa-ban fa-stack-2x text-danger"></i><br></span><br>fa-ban on fa-camera</p>
+</blockquote>
+<h3 id="固定宽度"><a href="#固定宽度" class="headerlink" title="固定宽度"></a>固定宽度</h3><p>使用 fa-fw 可以将图标设置为一个固定宽度。主要用于不同宽度图标无法对齐的情况。 尤其在列表或导航时起到重要作用。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;div class="list-group"&gt;</div><div class="line">  &lt;a class="list-group-item" href="#"&gt;&lt;i class="fa fa-home fa-fw"&gt;&lt;/i&gt;&amp;nbsp; 主页&lt;/a&gt;</div><div class="line">  &lt;a class="list-group-item" href="#"&gt;&lt;i class="fa fa-book fa-fw"&gt;&lt;/i&gt;&amp;nbsp; 图书&lt;/a&gt;</div><div class="line">  &lt;a class="list-group-item" href="#"&gt;&lt;i class="fa fa-pencil fa-fw"&gt;&lt;/i&gt;&amp;nbsp; 铅笔&lt;/a&gt;</div><div class="line">  &lt;a class="list-group-item" href="#"&gt;&lt;i class="fa fa-cog fa-fw"&gt;&lt;/i&gt;&amp;nbsp;设置&lt;/a&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<div class="list-group"><br>  <a class="list-group-item" href="#"><i class="fa fa-home fa-fw"></i>&nbsp; 主页</a><br>  <a class="list-group-item" href="#"><i class="fa fa-book fa-fw"></i>&nbsp; 图书</a><br>  <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw"></i>&nbsp; 铅笔</a><br>  <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp;设置</a><br></div>
+
+</blockquote>
+<h3 id="边框与对齐"><a href="#边框与对齐" class="headerlink" title="边框与对齐"></a>边框与对齐</h3><p>使用 fa-border 以及 pull-right 或 pull-left 可以轻易构造出引用的特殊效果。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="selector-tag">i</span> class=<span class="string">"fa fa-quote-left fa-3x pull-left fa-border"</span>&gt;&lt;/i&gt;</div><div class="line">Font Awesome为您提供可缩放的矢量图标，您可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果。</div></pre></td></tr></table></figure>
+<blockquote>
+<p><i class="fa fa-quote-left fa-3x pull-left fa-border"></i><br>Font Awesome为您提供可缩放的矢量图标，您可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;Font Awesome为您提供可缩放的矢量图标，您可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果。（如果需要支持IE7，那真的十分抱歉。Font Awesome从4.1.0版本开始不再支持IE7， 但更早的版本仍然支持。）&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="learn" scheme="http://blog.weson.cf/categories/learn/"/>
+    
+    
+      <category term="Font Awesome" scheme="http://blog.weson.cf/tags/Font-Awesome/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Emmet使用手册</title>
     <link href="http://blog.weson.cf/2016/09/03/Emmet%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
     <id>http://blog.weson.cf/2016/09/03/Emmet使用手册/</id>
     <published>2016-09-03T10:34:43.000Z</published>
-    <updated>2016-09-03T12:36:15.841Z</updated>
+    <updated>2016-09-03T12:44:28.639Z</updated>
     
     <content type="html"><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Emmet (前身为 Zen Coding) 是一个能大幅度提高前端开发效率的一个工具，它使用仿CSS选择器的语法来生成代码，大大提高了HTML/CSS代码编写的速度。<br><a id="more"></a></p>
 <h1 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h1><h2 id="HTML缩写"><a href="#HTML缩写" class="headerlink" title="HTML缩写"></a>HTML缩写</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>HTML文档需要包含一些固定的标签，比如<html>、<head>、</head><body>等，现在你只需要1秒钟就可以输入这些标签。比如输入“!”或“html:5”，然后按拓展键（默认为Tab键，不行的可以试试Ctrl+E）：</body></html></p>
