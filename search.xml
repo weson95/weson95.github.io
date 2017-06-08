@@ -61,7 +61,7 @@
 <tr>
 <td>data-height</td>
 <td style="text-align:center">Number</td>
-<td style="text-align:right"></td>
+<td style="text-align:right">null</td>
 <td>定义表格的高度。</td>
 </tr>
 <tr>
@@ -73,7 +73,7 @@
 <tr>
 <td>data-sort-name</td>
 <td style="text-align:center">String</td>
-<td style="text-align:right"></td>
+<td style="text-align:right">null</td>
 <td>定义排序列,通过url方式获取数据填写字段名，否则填写下标</td>
 </tr>
 <tr>
@@ -91,7 +91,7 @@
 <tr>
 <td>data-url</td>
 <td style="text-align:center">String</td>
-<td style="text-align:right"></td>
+<td style="text-align:right">null</td>
 <td>服务器数据的加载地址</td>
 </tr>
 <tr>
