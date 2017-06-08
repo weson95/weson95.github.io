@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.weson.cf/"/>
-  <updated>2017-06-08T14:16:00.696Z</updated>
+  <updated>2017-06-08T14:41:29.053Z</updated>
   <id>http://blog.weson.cf/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.weson.cf/2017/06/08/Bootstrap%20Table%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
     <id>http://blog.weson.cf/2017/06/08/Bootstrap Table使用手册/</id>
     <published>2017-06-08T10:34:43.000Z</published>
-    <updated>2017-06-08T14:16:00.696Z</updated>
+    <updated>2017-06-08T14:41:29.053Z</updated>
     
     <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Bootstrap table是国人开发的一款基于 Bootstrap 的 jQuery 表格插件，通过简单的设置，就可以拥有强大的单选、多选、排序、分页，以及编辑、导出、过滤（扩展）等等的功能。<br><a id="more"></a></p>
 <h1 id="相关文档"><a href="#相关文档" class="headerlink" title="相关文档"></a>相关文档</h1><p><a href="http://bootstrap-table.wenzhixin.net.cn/zh-cn/documentation/" target="_blank" rel="external">Bootstrap Table API</a><br><a href="http://issues.wenzhixin.net.cn/bootstrap-table/index.html" target="_blank" rel="external">Bootstrap Table Demo</a></p>
@@ -51,8 +51,170 @@
 <p><strong>以上的两种方法组件引用顺序必须是1.Jquery2.BootStrap3.BootStrap-Table，这个顺序很重要，否则不能正常使用</strong></p>
 <h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p>1.通过 data 属性的方式<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">data-toggle</span>=<span class="string">"table"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">thead</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>Item ID<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>Item Name<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>Item Price<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>Item 1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>$1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>Item 2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>$2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p>2.通过 JavaScript 的方式<br><figure class="highlight xl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">&lt;table id=<span class="string">"table"</span>&gt;&lt;/table&gt;</div><div class="line">$(<span class="string">'#table'</span>).bootstrapTable(&#123;</div><div class="line">    columns: [&#123;</div><div class="line">        field: <span class="string">'id'</span>,</div><div class="line">        <span class="built_in">title</span>: <span class="string">'Item ID'</span></div><div class="line">    &#125;, &#123;</div><div class="line">        field: <span class="string">'name'</span>,</div><div class="line">        <span class="built_in">title</span>: <span class="string">'Item Name'</span></div><div class="line">    &#125;, &#123;</div><div class="line">        field: <span class="string">'price'</span>,</div><div class="line">        <span class="built_in">title</span>: <span class="string">'Item Price'</span></div><div class="line">    &#125;],</div><div class="line">    <span class="keyword">data</span>: [&#123;</div><div class="line">        id: <span class="number">1</span>,</div><div class="line">        <span class="keyword">name</span>: <span class="string">'Item 1'</span>,</div><div class="line">        price: <span class="string">'$1'</span></div><div class="line">    &#125;, &#123;</div><div class="line">        id: <span class="number">2</span>,</div><div class="line">        <span class="keyword">name</span>: <span class="string">'Item 2'</span>,</div><div class="line">        price: <span class="string">'$2'</span></div><div class="line">    &#125;]</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<h1 id="表格参数"><a href="#表格参数" class="headerlink" title="表格参数"></a>表格参数</h1><p>*以下为常用参数，更多参数请阅读API<br>| 标签               | 类型    | 默认                | 描述                                                                                            |<br>| —————— | ——- | ——————- | ———————————————————————————————– |<br>| data-toggle        | String  | ‘table’             | 不用写 JavaScript 直接启用表格。                                                                |<br>| data-classes       | String  | ‘table table-hover’ | 表格的类名称。默认情况下，表格是有边框的，你可以添加 ‘table-no-bordered’ 来删除表格的边框样式。 |<br>| data-height        | Number  |                     | 定义表格的高度。                                                                                |<br>| data-striped       | Boolean | false               | 设置为 true 会有隔行变色效果                                                                    |<br>| data-sort-name     | String  |                     | 定义排序列,通过url方式获取数据填写字段名，否则填写下标                                          |<br>| data-sort-order    | String  | ‘asc’               | 定义排序方式 ‘asc’ 或者 ‘desc’                                                                  |<br>| data-method        | String  | ‘get’               | 服务器数据的请求方式 ‘get’ or ‘post’                                                            |<br>| data-url           | String  |                     | 服务器数据的加载地址                                                                            |<br>| data-content-type  | String  | ‘application/json’  | 发送到服务器的数据编码类型                                                                      |<br>| data-data-type     | String  | ‘json’              | 服务器返回的数据类型                                                                            |<br>| data-pagination    | Boolean | false               | 设置为 true 会在表格底部显示分页条                                                              |<br>| data-page-number   | Number  | 1                   | 如果设置了分页，首页页码                                                                        |<br>| data-page-size     | Number  | 10                  | 如果设置了分页，页面数据条数                                                                    |<br>| data-search        | Boolean | false               | 是否启用搜索框                                                                                  |<br>| data-strict-search | Boolean | false               | 设置为 true启用 全匹配搜索，否则为模糊搜索                                                      |<br>| data-show-header   | Boolean | true                | 是否显示列头                                                                                    |<br>| data-show-footer   | Boolean | false               | 是否显示列脚                                                                                    |<br>| data-show-columns  | Boolean | false               | 是否显示 内容列下拉框                                                                           |<br>| data-show-refresh  | Boolean | false               | 是否显示 刷新按钮                                                                               |</p>
-<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><p>*以下为常用事件，更多事件请阅读API<br>| 事件           | 参数                        | 描述                                                                                                                                       |<br>| ————– | ————————— | —————————————————————————————————————————————— |<br>| onAll          | name, args                  | 所有的事件都会触发该事件，参数包括：name：事件名，args：事件的参数。                                                                     |<br>| onClickRow     | row, $element               | 当用户点击某一行的时候触发，参数包括：row：点击行的数据，$element：tr 元素，field：点击列的 field 名称。                                |<br>| onDblClickRow  | row, $element               | 当用户双击某一行的时候触发，参数包括：row：点击行的数据，$element：tr 元素，field：点击列的 field 名称。                                |<br>| onClickCell    | field, value, row, $element | 当用户点击某一列的时候触发，参数包括：field：点击列的 field 名称，value：点击列的 value 值，row：点击列的整行数据，$element：td 元素。 |<br>| onDblClickCell | field, value, row, $element | 当用户双击某一列的时候触发，参数包括：field：点击列的 field 名称，value：点击列的 value 值，row：点击列的整行数据，$element：td 元素。 |</p>
+<h1 id="表格参数"><a href="#表格参数" class="headerlink" title="表格参数"></a>表格参数</h1><p>*以下为常用参数，更多参数请阅读API</p>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>类型</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data-toggle</td>
+<td>String</td>
+<td>‘table’</td>
+<td>不用写 JavaScript 直接启用表格。</td>
+</tr>
+<tr>
+<td>data-classes</td>
+<td>String</td>
+<td>‘table table-hover’</td>
+<td>表格的类名称。默认情况下，表格是有边框的，你可以添加 ‘table-no-bordered’ 来删除表格的边框样式。</td>
+</tr>
+<tr>
+<td>data-height</td>
+<td>Number</td>
+<td></td>
+<td>定义表格的高度。</td>
+</tr>
+<tr>
+<td>data-striped</td>
+<td>Boolean</td>
+<td>false</td>
+<td>设置为 true 会有隔行变色效果</td>
+</tr>
+<tr>
+<td>data-sort-name</td>
+<td>String</td>
+<td></td>
+<td>定义排序列,通过url方式获取数据填写字段名，否则填写下标</td>
+</tr>
+<tr>
+<td>data-sort-order</td>
+<td>String</td>
+<td>‘asc’</td>
+<td>定义排序方式 ‘asc’ 或者 ‘desc’</td>
+</tr>
+<tr>
+<td>data-method</td>
+<td>String</td>
+<td>‘get’</td>
+<td>服务器数据的请求方式 ‘get’ or ‘post’</td>
+</tr>
+<tr>
+<td>data-url</td>
+<td>String</td>
+<td></td>
+<td>服务器数据的加载地址</td>
+</tr>
+<tr>
+<td>data-content-type</td>
+<td>String</td>
+<td>‘application/json’</td>
+<td>发送到服务器的数据编码类型</td>
+</tr>
+<tr>
+<td>data-data-type</td>
+<td>String</td>
+<td>‘json’</td>
+<td>服务器返回的数据类型</td>
+</tr>
+<tr>
+<td>data-pagination</td>
+<td>Boolean</td>
+<td>false</td>
+<td>设置为 true 会在表格底部显示分页条</td>
+</tr>
+<tr>
+<td>data-page-number</td>
+<td>Number</td>
+<td>1</td>
+<td>如果设置了分页，首页页码</td>
+</tr>
+<tr>
+<td>data-page-size</td>
+<td>Number</td>
+<td>10</td>
+<td>如果设置了分页，页面数据条数</td>
+</tr>
+<tr>
+<td>data-search</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否启用搜索框</td>
+</tr>
+<tr>
+<td>data-strict-search</td>
+<td>Boolean</td>
+<td>false</td>
+<td>设置为 true启用 全匹配搜索，否则为模糊搜索</td>
+</tr>
+<tr>
+<td>data-show-header</td>
+<td>Boolean</td>
+<td>true</td>
+<td>是否显示列头</td>
+</tr>
+<tr>
+<td>data-show-footer</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否显示列脚</td>
+</tr>
+<tr>
+<td>data-show-columns</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否显示 内容列下拉框</td>
+</tr>
+<tr>
+<td>data-show-refresh</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否显示 刷新按钮</td>
+</tr>
+</tbody>
+</table>
+<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><p>*以下为常用事件，更多事件请阅读API</p>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onAll</td>
+<td>name, args</td>
+<td>所有的事件都会触发该事件，参数包括：name：事件名，args：事件的参数。</td>
+</tr>
+<tr>
+<td>onClickRow</td>
+<td>row, $element</td>
+<td>当用户点击某一行的时候触发，参数包括：row：点击行的数据，$element：tr 元素，field：点击列的 field 名称。</td>
+</tr>
+<tr>
+<td>onDblClickRow</td>
+<td>row, $element</td>
+<td>当用户双击某一行的时候触发，参数包括：row：点击行的数据，$element：tr 元素，field：点击列的 field 名称。</td>
+</tr>
+<tr>
+<td>onClickCell</td>
+<td>field, value, row, $element</td>
+<td>当用户点击某一列的时候触发，参数包括：field：点击列的 field 名称，value：点击列的 value 值，row：点击列的整行数据，$element：td 元素。</td>
+</tr>
+<tr>
+<td>onDblClickCell</td>
+<td>field, value, row, $element</td>
+<td>当用户双击某一列的时候触发，参数包括：field：点击列的 field 名称，value：点击列的 value 值，row：点击列的整行数据，$element：td 元素。</td>
+</tr>
+</tbody>
+</table>
 <h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><p><em>以下为常用方法，更多方法请阅读API
 </em>使用方法的语法：$(‘#table’).bootstrapTable(‘method’, parameter);。</p>
 <table>
