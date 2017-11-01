@@ -18,7 +18,7 @@
 <meta name="description" content="This is Weson&apos;s Blog">
 <meta property="og:type" content="website">
 <meta property="og:title" content="tags">
-<meta property="og:url" content="http://blog.weson.cf/tags/index.html">
+<meta property="og:url" content="https://github.com/weson95#用于绑定域名, 其他的不需要配置/tags/index.html">
 <meta property="og:site_name" content="Weson's Blog">
 <meta property="og:description" content="This is Weson&apos;s Blog">
 <meta property="og:updated_time" content="2016-08-31T07:21:39.599Z">
@@ -417,61 +417,26 @@
 
 
     
-      <div class="duoshuo" id="comments">
-    <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="tags/index.html" data-title="tags" data-url="http://blog.weson.cf/tags/index.html"></div>
-    <script>
-        var duoshuoQuery = {short_name:"Weson"};
-        var loadComment = function(){
-            var d = document, s = d.createElement('script');
-            s.src = 'http://weson95.github.io/js/embed.js';
-            s.async = true; s.charset = 'UTF-8';
-            (d.head || d.body).appendChild(s);
-        }
+        <!-- 来必力City版安装代码 -->
+<section class="LiveRe" id="comments">
+<div id="lv-container" data-id="city" data-uid="undefined">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
 
-        
-            // Add comment count
-            $(function(){ 
-                var jsonUrl = "http://api.duoshuo.com/threads/counts.jsonp?short_name=Weson&threads=tags/index.html&callback=?";
-                $.getJSON(jsonUrl, function(result){
-                    $.each(result.response, function(i, field){
-                        var value = field.comments;
-                        if (value > 0) {
-                            $(".count-comment").text(value);
-                            return;
-                        }
-                    })
-                })
-            })
-        
-    </script>
-    
-    <aside class="comment-bar">
-        <a href="javascript:void(0);">
-            <i class="fa fa-commenting-o animated infinite pulse"></i>
-            <i class="fa fa-spinner fa-pulse"></i>
-            <span class="count-comment"></span>
-        </a>
-    </aside>
-    <script>
-        var $commentBar = $("#comments aside.comment-bar");
-        var load$hide = function(){
-            $commentBar.find("a > i").toggle();
-            loadComment();
-            $commentBar.fadeOut(800);
-        }
-        $commentBar.click(function(){
-            load$hide();
-        })
-        $commentBar.children("a").hover(function(){
-            load$hide();
-        })
-        if (window.location.hash === "#comments") {
-            load$hide();
-        }
-    </script>
+       if (typeof LivereTower === 'function') { return; }
 
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
 </div>
+</section>
+<!-- City版安装代码已完成 -->
     
 
 
