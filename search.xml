@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[表格神器Bootstrap Table]]></title>
-      <url>http://blog.weson.cf/2017/06/08/Bootstrap%20Table%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</url>
+      <url>https://github.com/weson95#%E7%94%A8%E4%BA%8E%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D,%20%E5%85%B6%E4%BB%96%E7%9A%84%E4%B8%8D%E9%9C%80%E8%A6%81%E9%85%8D%E7%BD%AE/2017/06/08/Bootstrap%20Table%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</url>
       <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Bootstrap table是国人开发的一款基于 Bootstrap 的 jQuery 表格插件，通过简单的设置，就可以拥有强大的单选、多选、排序、分页，以及编辑、导出、过滤（扩展）等等的功能。<br><a id="more"></a></p>
 <h2 id="相关文档"><a href="#相关文档" class="headerlink" title="相关文档"></a>相关文档</h2><p><a href="http://bootstrap-table.wenzhixin.net.cn/zh-cn/documentation/" target="_blank" rel="external">Bootstrap Table API</a><br><a href="http://issues.wenzhixin.net.cn/bootstrap-table/index.html" target="_blank" rel="external">Bootstrap Table Demo</a></p>
 <h2 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h2><ul>
@@ -29,7 +29,7 @@
 <ul>
 <li>首先，Bootstrap 的所有 JavaScript 插件都依赖 jQuery，因此 jQuery 必须在 Bootstrap 之前引入，目前使用稳定版本jquery.1.12.1.js.</li>
 <li>其次，Bootstrap Table是Bootstrap的一个组件，所以它是依赖Bootstrap的，我们首先需要添加Bootstrap的引用。直接在搜索框中搜索bootstrap,版本已经出来4的预览版，但还是建议使用比较稳定的Bootstrap3，目前最新的3.3.5。</li>
-<li>最后，就是Bootstrap Table的包了，直接在搜索框中搜索bootstrap-table,目前较好的版本为1.11.1，或者我们直接进到它的<a href="https://github.com/wenzhixin/bootstrap-table" target="_blank" rel="external">源码</a>git clone下载下来放到项目中即可。</li>
+<li>最后，就是Bootstrap Table的包了，直接在搜索框中搜索bootstrap-table,目前较好的版本为1.11.1，或者我们直接进到它的<a href="https://github.com/wenzhixin/bootstrap-table">源码</a>git clone下载下来放到项目中即可。</li>
 </ul>
 <p>2.使用visual studio自带的包管理工具：Nuget<br>NuGet的官方说明是：NuGet是一款Visual Studio的扩展，它可以简单的安装、升级开源库和工具。<br>官网地址：<a href="http://www.nuget.org/" target="_blank" rel="external">http://www.nuget.org/</a><br>从官网下载安装完成之后，就可以在vs中使用了。打开Nuget，搜索Bootstrap Table<br><img src="http://ocknrilhe.bkt.clouddn.com/360%E6%88%AA%E5%9B%BE-22101348.jpg" alt="enter description here"></p>
 <p><strong>以上的两种方法组件引用顺序必须是1.Jquery2.BootStrap3.BootStrap-Table，这个顺序很重要，否则不能正常使用</strong></p>
@@ -288,7 +288,7 @@
     
     <entry>
       <title><![CDATA[Font Awesome使用手册]]></title>
-      <url>http://blog.weson.cf/2016/09/19/Font-Awesome%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</url>
+      <url>https://github.com/weson95#%E7%94%A8%E4%BA%8E%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D,%20%E5%85%B6%E4%BB%96%E7%9A%84%E4%B8%8D%E9%9C%80%E8%A6%81%E9%85%8D%E7%BD%AE/2016/09/19/Font-Awesome%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</url>
       <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Font Awesome 是一套完美的图标字体,主要目的是和 Bootstrap 搭配使用。Font Awesome提供可缩放的矢量图标，您可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果。（如果需要支持IE7，那真的十分抱歉。Font Awesome从4.1.0版本开始不再支持IE7， 但更早的版本仍然支持。）</p>
 <a id="more"></a>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="直接下载"><a href="#直接下载" class="headerlink" title="直接下载"></a>直接下载</h3><p>直接从<a href="http://fontawesome.io/" target="_blank" rel="external">官网</a>下载Font Awesome，然后在网页头部引用即可在网页中使用Font Awesome提供的图标。</p>
@@ -336,7 +336,7 @@
     
     <entry>
       <title><![CDATA[Emmet使用手册]]></title>
-      <url>http://blog.weson.cf/2016/09/03/Emmet%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</url>
+      <url>https://github.com/weson95#%E7%94%A8%E4%BA%8E%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D,%20%E5%85%B6%E4%BB%96%E7%9A%84%E4%B8%8D%E9%9C%80%E8%A6%81%E9%85%8D%E7%BD%AE/2016/09/03/Emmet%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</url>
       <content type="html"><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Emmet (前身为 Zen Coding) 是一个能大幅度提高前端开发效率的一个工具，它使用仿CSS选择器的语法来生成代码，大大提高了HTML/CSS代码编写的速度。<br><a id="more"></a></p>
 <h1 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h1><h2 id="HTML缩写"><a href="#HTML缩写" class="headerlink" title="HTML缩写"></a>HTML缩写</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>HTML文档需要包含一些固定的标签，比如<html>、<head>、</head><body>等，现在你只需要1秒钟就可以输入这些标签。比如输入“!”或“html:5”，然后按拓展键（默认为Tab键，不行的可以试试Ctrl+E）：</body></html></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    </div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
@@ -401,7 +401,7 @@
     
     <entry>
       <title><![CDATA[Sublime Text 3插件推荐]]></title>
-      <url>http://blog.weson.cf/2016/09/02/Sublime-Text-3%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
+      <url>https://github.com/weson95#%E7%94%A8%E4%BA%8E%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D,%20%E5%85%B6%E4%BB%96%E7%9A%84%E4%B8%8D%E9%9C%80%E8%A6%81%E9%85%8D%E7%BD%AE/2016/09/02/Sublime-Text-3%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
       <content type="html"><![CDATA[<h2 id="软件介绍"><a href="#软件介绍" class="headerlink" title="软件介绍"></a>软件介绍</h2><p>Sublime Text 3是一个代码编辑器，也是HTML和散文先进的文本编辑器。Sublime Text 3具有漂亮的用户界面和强大的功能，例如代码缩略图，Python的插件，代码段等。还可自定义键绑定，菜单和工具栏。Sublime Text 的主要功能包括：拼写检查，书签，完整的 Python API ， Goto 功能，即时项目切换，多选择，多窗口等等。Sublime Text 是一个跨平台的编辑器，同时支持Windows、Linux、Mac OS X等操作系统。<br><a id="more"></a></p>
 <h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><p>直接从<a href="http://www.sublimetext.com/3" target="_blank" rel="external">Sublime Text 3官网</a>下载</p>
 <h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><ol>
@@ -478,7 +478,7 @@
     
     <entry>
       <title><![CDATA[Markdown入门指南]]></title>
-      <url>http://blog.weson.cf/2016/08/28/Markdown%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</url>
+      <url>https://github.com/weson95#%E7%94%A8%E4%BA%8E%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D,%20%E5%85%B6%E4%BB%96%E7%9A%84%E4%B8%8D%E9%9C%80%E8%A6%81%E9%85%8D%E7%BD%AE/2016/08/28/Markdown%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</url>
       <content type="html"><![CDATA[<h2 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h2><p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此有很多人用它写博客。</p>
 <a id="more"></a>
 <h2 id="Markdown编辑器推荐"><a href="#Markdown编辑器推荐" class="headerlink" title="Markdown编辑器推荐"></a>Markdown编辑器推荐</h2><p>虽然记事本就可以编辑Markdown，但是并不提供实习预览功能，我推荐两个在线编辑预览的编辑器。</p>
@@ -535,7 +535,7 @@
     
     <entry>
       <title><![CDATA[hexo常用命令]]></title>
-      <url>http://blog.weson.cf/2016/08/27/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+      <url>https://github.com/weson95#%E7%94%A8%E4%BA%8E%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D,%20%E5%85%B6%E4%BB%96%E7%9A%84%E4%B8%8D%E9%9C%80%E8%A6%81%E9%85%8D%E7%BD%AE/2016/08/27/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
       <content type="html"><![CDATA[<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><blockquote>
 <p>hexo new “title” #新建文章<br>hew new page “title” #新建页面<br>hexo generate #生成静态网页<br>hexo server #启动服务预览<br>hexo deploy#开始部署</p>
 </blockquote>
