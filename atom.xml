@@ -4,9 +4,9 @@
   <subtitle>Whatever is worth doing is worth doing well!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://github.com/weson95/"/>
+  <link href="https://weson95.github.io/"/>
   <updated>2017-11-01T13:22:31.625Z</updated>
-  <id>https://github.com/weson95/</id>
+  <id>https://weson95.github.io/</id>
   
   <author>
     <name>Weson</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>表格神器Bootstrap Table</title>
-    <link href="https://github.com/weson95/2017/06/08/Bootstrap%20Table%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
-    <id>https://github.com/weson95/2017/06/08/Bootstrap Table使用手册/</id>
+    <link href="https://weson95.github.io/2017/06/08/Bootstrap%20Table%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
+    <id>https://weson95.github.io/2017/06/08/Bootstrap Table使用手册/</id>
     <published>2017-06-08T10:34:43.000Z</published>
     <updated>2017-11-01T13:22:31.625Z</updated>
     
@@ -45,7 +45,7 @@
 <ul>
 <li>首先，Bootstrap 的所有 JavaScript 插件都依赖 jQuery，因此 jQuery 必须在 Bootstrap 之前引入，目前使用稳定版本jquery.1.12.1.js.</li>
 <li>其次，Bootstrap Table是Bootstrap的一个组件，所以它是依赖Bootstrap的，我们首先需要添加Bootstrap的引用。直接在搜索框中搜索bootstrap,版本已经出来4的预览版，但还是建议使用比较稳定的Bootstrap3，目前最新的3.3.5。</li>
-<li>最后，就是Bootstrap Table的包了，直接在搜索框中搜索bootstrap-table,目前较好的版本为1.11.1，或者我们直接进到它的<a href="https://github.com/wenzhixin/bootstrap-table">源码</a>git clone下载下来放到项目中即可。</li>
+<li>最后，就是Bootstrap Table的包了，直接在搜索框中搜索bootstrap-table,目前较好的版本为1.11.1，或者我们直接进到它的<a href="https://github.com/wenzhixin/bootstrap-table" target="_blank" rel="external">源码</a>git clone下载下来放到项目中即可。</li>
 </ul>
 <p>2.使用visual studio自带的包管理工具：Nuget<br>NuGet的官方说明是：NuGet是一款Visual Studio的扩展，它可以简单的安装、升级开源库和工具。<br>官网地址：<a href="http://www.nuget.org/" target="_blank" rel="external">http://www.nuget.org/</a><br>从官网下载安装完成之后，就可以在vs中使用了。打开Nuget，搜索Bootstrap Table<br><img src="http://ocknrilhe.bkt.clouddn.com/360%E6%88%AA%E5%9B%BE-22101348.jpg" alt="enter description here"></p>
 <p><strong>以上的两种方法组件引用顺序必须是1.Jquery2.BootStrap3.BootStrap-Table，这个顺序很重要，否则不能正常使用</strong></p>
@@ -306,17 +306,17 @@
     
     </summary>
     
-      <category term="learn" scheme="https://github.com/weson95/categories/learn/"/>
+      <category term="learn" scheme="https://weson95.github.io/categories/learn/"/>
     
     
-      <category term="Bootstrap Table" scheme="https://github.com/weson95/tags/Bootstrap-Table/"/>
+      <category term="Bootstrap Table" scheme="https://weson95.github.io/tags/Bootstrap-Table/"/>
     
   </entry>
   
   <entry>
     <title>Font Awesome使用手册</title>
-    <link href="https://github.com/weson95/2016/09/19/Font-Awesome%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
-    <id>https://github.com/weson95/2016/09/19/Font-Awesome使用手册/</id>
+    <link href="https://weson95.github.io/2016/09/19/Font-Awesome%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
+    <id>https://weson95.github.io/2016/09/19/Font-Awesome使用手册/</id>
     <published>2016-09-19T15:10:38.000Z</published>
     <updated>2016-09-27T06:22:11.663Z</updated>
     
@@ -370,17 +370,17 @@
     
     </summary>
     
-      <category term="learn" scheme="https://github.com/weson95/categories/learn/"/>
+      <category term="learn" scheme="https://weson95.github.io/categories/learn/"/>
     
     
-      <category term="Font Awesome" scheme="https://github.com/weson95/tags/Font-Awesome/"/>
+      <category term="Font Awesome" scheme="https://weson95.github.io/tags/Font-Awesome/"/>
     
   </entry>
   
   <entry>
     <title>Emmet使用手册</title>
-    <link href="https://github.com/weson95/2016/09/03/Emmet%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
-    <id>https://github.com/weson95/2016/09/03/Emmet使用手册/</id>
+    <link href="https://weson95.github.io/2016/09/03/Emmet%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
+    <id>https://weson95.github.io/2016/09/03/Emmet使用手册/</id>
     <published>2016-09-03T10:34:43.000Z</published>
     <updated>2016-09-03T12:44:28.639Z</updated>
     
@@ -451,17 +451,17 @@
     
     </summary>
     
-      <category term="learn" scheme="https://github.com/weson95/categories/learn/"/>
+      <category term="learn" scheme="https://weson95.github.io/categories/learn/"/>
     
     
-      <category term="Emmet" scheme="https://github.com/weson95/tags/Emmet/"/>
+      <category term="Emmet" scheme="https://weson95.github.io/tags/Emmet/"/>
     
   </entry>
   
   <entry>
     <title>Sublime Text 3插件推荐</title>
-    <link href="https://github.com/weson95/2016/09/02/Sublime-Text-3%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
-    <id>https://github.com/weson95/2016/09/02/Sublime-Text-3插件推荐/</id>
+    <link href="https://weson95.github.io/2016/09/02/Sublime-Text-3%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    <id>https://weson95.github.io/2016/09/02/Sublime-Text-3插件推荐/</id>
     <published>2016-09-02T11:43:32.000Z</published>
     <updated>2016-09-03T12:29:38.987Z</updated>
     
@@ -544,17 +544,17 @@
     
     </summary>
     
-      <category term="learn" scheme="https://github.com/weson95/categories/learn/"/>
+      <category term="learn" scheme="https://weson95.github.io/categories/learn/"/>
     
     
-      <category term="Sublime text 3" scheme="https://github.com/weson95/tags/Sublime-text-3/"/>
+      <category term="Sublime text 3" scheme="https://weson95.github.io/tags/Sublime-text-3/"/>
     
   </entry>
   
   <entry>
     <title>Markdown入门指南</title>
-    <link href="https://github.com/weson95/2016/08/28/Markdown%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
-    <id>https://github.com/weson95/2016/08/28/Markdown入门指南/</id>
+    <link href="https://weson95.github.io/2016/08/28/Markdown%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
+    <id>https://weson95.github.io/2016/08/28/Markdown入门指南/</id>
     <published>2016-08-28T11:14:28.316Z</published>
     <updated>2016-08-28T12:25:37.344Z</updated>
     
@@ -617,17 +617,17 @@
     
     </summary>
     
-      <category term="learn" scheme="https://github.com/weson95/categories/learn/"/>
+      <category term="learn" scheme="https://weson95.github.io/categories/learn/"/>
     
     
-      <category term="markdown" scheme="https://github.com/weson95/tags/markdown/"/>
+      <category term="markdown" scheme="https://weson95.github.io/tags/markdown/"/>
     
   </entry>
   
   <entry>
     <title>hexo常用命令</title>
-    <link href="https://github.com/weson95/2016/08/27/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>https://github.com/weson95/2016/08/27/hexo常用命令/</id>
+    <link href="https://weson95.github.io/2016/08/27/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://weson95.github.io/2016/08/27/hexo常用命令/</id>
     <published>2016-08-27T13:46:20.000Z</published>
     <updated>2016-08-29T15:21:08.457Z</updated>
     
@@ -651,10 +651,10 @@
     
     </summary>
     
-      <category term="learn" scheme="https://github.com/weson95/categories/learn/"/>
+      <category term="learn" scheme="https://weson95.github.io/categories/learn/"/>
     
     
-      <category term="hexo" scheme="https://github.com/weson95/tags/hexo/"/>
+      <category term="hexo" scheme="https://weson95.github.io/tags/hexo/"/>
     
   </entry>
   
