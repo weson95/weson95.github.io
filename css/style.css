@@ -44,12 +44,10 @@ body:after {
   margin-top: 0px;
 }
 #donate_guide {
-  height: 250px;
-  width: auto;
+  height: auto;
   margin: 10px auto;
 }
 #donate_guide img {
-  height: 250px;
   height: 250px;
 }
 @font-face {
