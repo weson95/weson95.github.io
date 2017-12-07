@@ -398,10 +398,10 @@
         <img src="/img/weixin.jpg" alt="微信打赏">  
     </div>
     <script>
-        document.getElementById("btn_donate").onclick = function(){
-            $("#donate_board").addClass('hidden');
-            $("#donate_guide").removeClass('hidden');
-        }
+        $("#btn_donate").onclick( function(){
+            $("#donate_board").hide();
+            $("#donate_guide").show();
+        })
     </script>
 </div>
 <! -- 添加捐赠图标 -->
